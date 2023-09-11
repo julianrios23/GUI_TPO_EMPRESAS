@@ -93,6 +93,7 @@ public class CargaDatos extends javax.swing.JFrame {
         txtCuit.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
 
         btnCrearEmpresa.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        btnCrearEmpresa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sources/boton-agregar.png"))); // NOI18N
         btnCrearEmpresa.setText("CREAR EMPRESA");
         btnCrearEmpresa.setToolTipText("Agregar Empresa");
         btnCrearEmpresa.addActionListener(new java.awt.event.ActionListener() {
@@ -112,11 +113,12 @@ public class CargaDatos extends javax.swing.JFrame {
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnCrearEmpresa)
+                .addGap(87, 87, 87))
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(jLabel2))
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -125,9 +127,11 @@ public class CargaDatos extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtCuit, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtRazon, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnCrearEmpresa))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(txtRazon, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(jLabel2)))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,9 +146,9 @@ public class CargaDatos extends javax.swing.JFrame {
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txtCuit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addComponent(btnCrearEmpresa)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addGap(15, 15, 15))
         );
 
         jpPrinc.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 340, 200));
@@ -179,7 +183,8 @@ public class CargaDatos extends javax.swing.JFrame {
             }
         });
 
-        btnAgreEmpleado.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        btnAgreEmpleado.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        btnAgreEmpleado.setIcon(new javax.swing.ImageIcon("D:\\NetBeans16\\GUI_TPO_EMPRESAS\\src\\sources\\boton-agregar.png")); // NOI18N
         btnAgreEmpleado.setText("AGREGAR EMPLEADO");
         btnAgreEmpleado.setToolTipText("Agrega Empleado");
         btnAgreEmpleado.addActionListener(new java.awt.event.ActionListener() {
@@ -188,8 +193,10 @@ public class CargaDatos extends javax.swing.JFrame {
             }
         });
 
-        btnMostrarEmpl.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        btnMostrarEmpl.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        btnMostrarEmpl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sources/ver.png"))); // NOI18N
         btnMostrarEmpl.setText("MOSTRAR EMPLEADOS");
+        btnMostrarEmpl.setToolTipText("Muestra Lista Empleados");
         btnMostrarEmpl.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMostrarEmplActionPerformed(evt);
@@ -250,7 +257,7 @@ public class CargaDatos extends javax.swing.JFrame {
             .addGroup(jLayeredPane2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel5)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtDoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -268,18 +275,18 @@ public class CargaDatos extends javax.swing.JFrame {
                     .addComponent(jLabel9)
                     .addComponent(txtSueldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(comboEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAgreEmpleado)
                     .addComponent(btnMostrarEmpl))
-                .addGap(26, 26, 26))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         jpPrinc.add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(367, 6, 420, 260));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
         jLabel1.setText("Julian Rios - TUDS 2023");
-        jpPrinc.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, -1, 20));
+        jpPrinc.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, -1, 20));
 
         btnSalir.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sources/salida.png"))); // NOI18N
@@ -290,7 +297,7 @@ public class CargaDatos extends javax.swing.JFrame {
                 btnSalirActionPerformed(evt);
             }
         });
-        jpPrinc.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, -1, 38));
+        jpPrinc.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, -1, 38));
 
         jMenu1.setText("Empresa");
         jMenuBar1.add(jMenu1);
@@ -311,7 +318,7 @@ public class CargaDatos extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpPrinc, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
+            .addComponent(jpPrinc, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE)
         );
 
         pack();
